@@ -100,7 +100,7 @@ textarea {
   transform: translateY(-2px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 268px) {
   .button-66 {
     padding: 16px 44px;
     min-width: 150px;
