@@ -15,7 +15,7 @@ a {
 }
 
 h1 {
-  color: #ff6363;
+  color: #f9dd00;
   font-weight: bold;
 }
 
@@ -38,6 +38,51 @@ p {
 
 .display {
   display: block;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+textarea:last-of-type {
+  resize: none; 
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 /* flash alert styles */
@@ -66,7 +111,8 @@ p {
   position: fixed;
   background-color: #000;
   opacity: 1;
-  right: -285px; /* start off behind the scenes */
+  right: -285px;
+  /* start off behind the scenes */
   -webkit-font-smoothing: antialiased;
   position: fixed;
   width: 285px;
@@ -92,7 +138,7 @@ p {
 
 .fa-bars {
   display: none !important;
-  color: #ff6363;
+  color: #f9dd00;
   float: right;
   padding: 20px;
   position: fixed;
@@ -102,7 +148,7 @@ p {
 }
 
 .fa-times {
-  color: #ff6363;
+  color: #f9dd00;
   float: right;
   padding: 20px;
   right: 0;
@@ -130,7 +176,7 @@ p {
 }
 
 .header-links a:hover {
-  color: #1b1ff0 !important;
+  color: #f9dd00 !important;
 }
 
 /* slide out nav menu styles */
@@ -163,7 +209,7 @@ p {
 }
 
 .nav-links a:hover {
-  color: #1b1ff0;
+  color: #f9dd00;
   -webkit-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   -ms-transition: all 0.6s ease-in-out;
@@ -207,8 +253,7 @@ p {
 }
 
 .aboutme {
-  background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg")
-    no-repeat;
+  background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -221,7 +266,7 @@ p {
 /* bouncing arrow */
 
 .fa-chevron-down {
-  color: #1b1ff0 !important;
+  color: #f9dd00 !important;
   bottom: 10px;
   margin-left: -30px;
   cursor: pointer;
@@ -233,6 +278,7 @@ p {
 /* Scroll down indicator (bouncing) */
 
 @-webkit-keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -241,10 +287,12 @@ p {
     -webkit-transform: translateY(0);
     transform: translateX(0);
   }
+
   40% {
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
+
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
@@ -252,6 +300,7 @@ p {
 }
 
 @-moz-keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -259,15 +308,18 @@ p {
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -276,10 +328,12 @@ p {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -ms-transform: translateY(-30px);
     transform: translateY(-30px);
   }
+
   60% {
     -ms-transform: translateY(-15px);
     transform: translateY(-15px);
@@ -303,6 +357,7 @@ p {
   height: auto;
   overflow: none;
 }
+
 .skillbar {
   position: relative;
   display: block;
@@ -394,12 +449,12 @@ p {
 }
 
 .fp-controlArrow.fp-next {
-  border-color: transparent transparent transparent #ff6363 !important;
+  border-color: transparent transparent transparent #f9dd00 !important;
   right: 45px !important;
 }
 
 .fp-controlArrow.fp-prev {
-  border-color: transparent #ff6363 transparent transparent !important;
+  border-color: transparent #f9dd00 transparent transparent !important;
   left: 45px !important;
 }
 
@@ -429,10 +484,12 @@ p {
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
@@ -440,6 +497,7 @@ p {
   90% {
     transform: translateX(-10px);
   }
+
   20%,
   40%,
   60%,
@@ -447,6 +505,7 @@ p {
     transform: translateX(10px);
   }
 }
+
 .shake {
   animation-name: shake;
 }
@@ -486,10 +545,10 @@ label {
   padding: 12px;
   min-width: 200px;
   border-radius: 2px;
-  border: 2px solid #ff6363;
+  border: 2px solid #f9dd00;
   text-align: center;
   font-size: 1em;
-  color: #ff6363;
+  color: #f9dd00;
   background-color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -497,7 +556,7 @@ label {
 }
 
 #submit:hover {
-  background-color: #ff6363;
+  background-color: #f9dd00;
   color: white;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -526,7 +585,7 @@ label {
 }
 
 .social-links a:hover {
-  color: #ff6363;
+  color: #f9dd00;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -571,8 +630,8 @@ label {
   z-index: 1000;
 }
 
-.spinner > div {
-  background-color: #ff6363;
+.spinner>div {
+  background-color: #f9dd00;
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -602,23 +661,27 @@ label {
 }
 
 @-webkit-keyframes sk-stretchdelay {
+
   0%,
   40%,
   100% {
     -webkit-transform: scaleY(0.4);
   }
+
   20% {
     -webkit-transform: scaleY(1);
   }
 }
 
 @keyframes sk-stretchdelay {
+
   0%,
   40%,
   100% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
   }
+
   20% {
     transform: scaleY(1);
     -webkit-transform: scaleY(1);
@@ -638,50 +701,60 @@ label {
 }
 
 @keyframes "blink" {
+
   from,
   to {
     color: transparent;
   }
+
   50% {
     color: white;
   }
 }
 
 @-moz-keyframes blink {
+
   from,
   to {
     color: transparent;
   }
+
   50% {
     color: white;
   }
 }
 
 @-webkit-keyframes "blink" {
+
   from,
   to {
     color: transparent;
   }
+
   50% {
     color: white;
   }
 }
 
 @-ms-keyframes "blink" {
+
   from,
   to {
     color: transparent;
   }
+
   50% {
     color: white;
   }
 }
 
 @-o-keyframes "blink" {
+
   from,
   to {
     color: transparent;
   }
+
   50% {
     color: white;
   }
