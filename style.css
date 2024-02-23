@@ -50,8 +50,9 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+
 textarea:last-of-type {
-  resize: none; 
+  resize: none;
 }
 
 label {
@@ -71,18 +72,41 @@ textarea {
   font-size: 16px;
 }
 
-button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
+.button-66 {
+  background-color: #f9dd00;
   border-radius: 4px;
+  border: 0;
+  color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  display: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
 }
 
-button:hover {
-  background-color: #45a049;
+.button-66:hover {
+  background-color: #ccb401;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* flash alert styles */
@@ -180,6 +204,9 @@ button:hover {
 }
 
 /* slide out nav menu styles */
+img {
+  border-radius: 20px;
+}
 
 .nav-container {
   padding-top: 10%;
